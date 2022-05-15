@@ -1,0 +1,12 @@
+table#chat-message-list.table
+  tbody
+    - chats.each do |chat|
+      tr
+        td
+          |  <div class="chat-message-holder 
+          = chat.from == current_user ? :right : :left
+          | "> 
+          .chat-message
+            = chat.from.name
+            | : 
+            = chat.message

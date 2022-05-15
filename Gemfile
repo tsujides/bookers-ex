@@ -44,7 +44,7 @@ group :development do
   gem 'spring'
 end
 
-group :test do
+group :development, :test do
   gem 'capybara', '>= 2.15'
   gem 'rspec-rails'
   gem "factory_bot_rails"
@@ -55,3 +55,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'jquery-rails'
+gem 'slim-rails'
+gem 'html2slim'
+gem 'rubocop', require:false
+gem 'rubocop-rails', require:false

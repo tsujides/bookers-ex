@@ -7,7 +7,7 @@
             <div class="chat-message">
               <%= chat.from.name %>:
               <%= chat.message %>
-            </div>
+            </div>rubocop --fail-level W --display-only-fail-level-offenses
           </div>
         </td>
       </tr>

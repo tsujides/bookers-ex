@@ -1,0 +1,18 @@
+= javascript_pack_tag 'chats'
+.container.px-5.px-sm-0
+  .row
+    .col-12
+      h2
+        = @user.name
+        | さんとのチャット
+  .row
+    #chat-message-list-holder.col
+      = render 'show', chats: @chats
+  .row
+    .col.chat-message-form-holder
+      = form_with url: chat_create_path, model: [@chat], id: "chat-message-form", local: false do |f|
+        = f.text_field :message
+        = f.submit "送信", class: "btn btn-success"
+  .row
+    .col
+      #chat-message-error
