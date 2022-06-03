@@ -61,8 +61,6 @@ gem 'html2slim'
 gem 'rubocop', require:false
 gem 'rubocop-rails', require:false
 
-gem 'pry-rails'
-
 gem 'dotenv-rails'
 group :production do
   gem 'mysql2'
